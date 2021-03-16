@@ -41,7 +41,8 @@ namespace WindowsFormsApp4
       textBox2.Text = "";
       for (int i = 0; i < 15; i++)
       {
-        if (Mas[i] < 0) Mas[i] = 0;
+        if (i % 2 == 0) Mas[i] = Mas[i] + 1;
+        else Mas[i] = Mas[i] + 2;
         textBox2.Text += "Mas[" + Convert.ToString(i) + "] = "
         + Convert.ToString(Mas[i]) + Environment.NewLine;
       }
